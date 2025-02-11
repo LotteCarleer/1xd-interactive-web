@@ -60,7 +60,7 @@ feeling();
 // 9. create an array `foods` with three of your favorite foods
 // loop through the array and log each food to the console (use a for loop)
 // hint: you can get the length of an array with `array.length`
-let foods = ["rice and chicken", "Fries", "Boulette"];
+let foods = ["Pizza", "Fries", "Mango"];
 for (let i = 0; i < foods.length; i++) {
   console.log(foods[i]);
 }
