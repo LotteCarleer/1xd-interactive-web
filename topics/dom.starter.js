@@ -21,9 +21,22 @@ document.getElementById("paragraph3").innerHTML =
 // select all the span elements by their classname and log the result to your console, what type of object is it?
 // next, loop over the elements and change the innerHTML to another emoji
 // hint: use the querySelectorAll function, use the .forEach method (or a for loop), and the .innerHTML property
+let span = document.querySelectorAll(".grabme");
+console.log(span);
 
+span.forEach((span) => {
+  span.innerHTML = "😵‍💫";
+});
 // 4 - change the CSS class
 // select the element with the id "message" and change the css class to "error"
 // hint: use the setAttribute function, or use the className property, or use the classList property
-
+document.getElementById("message").className = "error";
 // render a ul with li elements
+const ul = document.createElement("ul");
+document.body.appendChild(ul);
+const items = ["1", "2", "3"];
+items.forEach((item) => {
+  const li = document.createElement("li");
+  li.innerHTML = item;
+  ul.appendChild(li);
+});
